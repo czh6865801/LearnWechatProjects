@@ -1,0 +1,3 @@
+.navbarczh .weui-navigation-bar__left {
+  width: 120px !important;
+}
