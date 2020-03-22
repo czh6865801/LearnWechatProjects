@@ -222,6 +222,7 @@ module.exports =
               _this.setData({
                 ios: ios,
                 statusBarHeight: res.statusBarHeight,
+                heightczh: 2 * (rect.top - res.statusBarHeight) + rect.height,
                 innerWidth: isSupport ? 'width:' + rect.left + 'px' : '',
                 innerPaddingRight: isSupport ? 'padding-right:' + (res.windowWidth - rect.left) + 'px' : '',
                 leftWidth: isSupport ? 'width:' + (res.windowWidth - rect.left) + 'px' : ''
