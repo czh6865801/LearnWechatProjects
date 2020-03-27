@@ -227,6 +227,8 @@ module.exports =
                 innerPaddingRight: isSupport ? 'padding-right:' + (res.windowWidth - rect.left) + 'px' : '',
                 leftWidth: isSupport ? 'width:' + (res.windowWidth - rect.left) + 'px' : ''
               });
+              console.log(2 * (rect.top - res.statusBarHeight) + rect.height)
+              console.log(res.statusBarHeight, rect.height)
             }
           });
         },
