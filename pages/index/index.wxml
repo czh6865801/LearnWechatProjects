@@ -1,3 +1,13 @@
 <mp-navigation-bar color="white" background="rgba(255, 87, 34, 0.8196078431372549)" back="{{false}}" ext-class="navbarczh">
-<view slot="left" style="font-weight: bold;">消防小程序举报</view>
+  <view slot="left" style="font-weight: bold;">消防小程序举报</view>
 </mp-navigation-bar>
+<view class="swiper-container">
+  <swiper indicator-dots="true" autoplay="true" duration="500">
+    <block wx:for="{{background}}" wx:key="des" wx:for-item="item">
+      <swiper-item>
+        <image style=" height: 150px;width:100%" src="{{item.url}}"></image>
+        <!-- <view class="swiper-item">{{item.des}}</view> -->
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

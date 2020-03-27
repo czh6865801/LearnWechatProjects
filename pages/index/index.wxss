@@ -1,3 +1,11 @@
 .navbarczh .weui-navigation-bar__left {
   width: 120px !important;
 }
+.swiper-item {
+  background-color: red;
+  height: 100px
+}
+.swiper-container{
+  padding: 5px 10px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.616);
+}
