@@ -2,11 +2,15 @@
   <view slot="left" style="font-weight: bold;">消防小程序举报</view>
 </mp-navigation-bar>
 <view class="swiper-container">
-  <swiper indicator-dots="true" autoplay="false" duration="500" circular="true">
+  <swiper class="swiper-height" indicator-dots="true" autoplay="false" duration="500" circular="true">
     <block wx:for="{{background}}" wx:key="des" wx:for-item="item">
       <swiper-item class="swiper-border">
         <image class="imageclass" src="{{item.url}}" mode="scaleToFill"></image>
       </swiper-item>
     </block>
   </swiper>
+</view>
+
+<view class="swiper-container swiper-border">
+  ewq
 </view>
