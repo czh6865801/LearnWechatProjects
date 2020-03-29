@@ -1,3 +1,4 @@
+const AllIconName = require('../image/base64/index.js')
 Page({
   data: {
     background: [{
@@ -13,6 +14,18 @@ Page({
         des: '333'
       }
     ],
+    containerList: [
+      {
+        iconName: AllIconName.faceicon,
+        title: '我要办照',
+        des: '人脸识别办照',
+        iconName1: AllIconName.complainticon,
+        title1: '举报投诉',
+        des1: '快速反馈信息',
+      },
+    ]
   },
-
+  onLoad() {
+    console.log(AllIconName)
+  }
 })

@@ -11,6 +11,23 @@
   </swiper>
 </view>
 
-<view class="swiper-container swiper-border">
-  ewq
+<view class="swiper-container">
+  <view class="box-shawss swiper-border">
+    <view class="display-container" wx:for="{{containerList}}" wx:key="iconName" wx:for-item="item">
+      <view class="table-left">
+        <icon class="icon-face" style="background-image: url({{item.iconName}})"></icon>
+        <view class="flex-value-one">
+          <text class="container-text-bold">{{item.title}}</text>
+          <text class="container-text-tint">{{item.des}}</text>
+        </view>
+      </view>
+      <view class="table-right">
+        <icon class="icon-face" style="background-image: url({{item.iconName1}})"></icon>
+        <view class="flex-value-one">
+          <text class="container-text-bold">{{item.title1}}</text>
+          <text class="container-text-tint">{{item.des1}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>
