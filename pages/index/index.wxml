@@ -15,7 +15,7 @@
   <view class="box-shawss swiper-border">
     <view class="display-container" wx:for="{{containerList}}" wx:key="iconName" wx:for-item="item">
       <view class="table-left">
-        <icon class="icon-face" style="background-image: url({{item.iconName}})"></icon>
+        <icon type="successs" class="icon-face" style="background-image: url({{item.iconName}})"></icon>
         <view class="flex-value-one">
           <text class="container-text-bold">{{item.title}}</text>
           <text class="container-text-tint">{{item.des}}</text>

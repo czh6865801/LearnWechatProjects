@@ -44,6 +44,12 @@
   align-items: center;
   border-right: 1px solid #f3f3f3;
 }
+.table-right {
+  flex: 1;
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+}
 .flex-value-one {
   flex: 1;
 }
@@ -53,16 +59,11 @@
 }
 .container-text-tint {
   color: rgb(189, 189, 189);
-  font-size: 10px;
+  font-size: 20rpx;
   display: block;
 
 }
-.table-right {
-  flex: 1;
-  padding: 20px 15px;
-  display: flex;
-  align-items: center;
-}
+
 /* 图标 */
 .icon-face {
   width: 50rpx;
