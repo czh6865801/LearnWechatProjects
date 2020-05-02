@@ -1,5 +1,5 @@
 const AllIconName = require('../image/base64/index.js')
-Page({
+Component({
   data: {
     background: [{
         url: 'http://img4.imgtn.bdimg.com/it/u=280538008,469035030&fm=26&gp=0.jpg',
@@ -14,18 +14,52 @@ Page({
         des: '333'
       }
     ],
-    containerList: [
+    containerList: [{
+        iconName: AllIconName.faceicon,
+        title: '我要办照',
+        des: '人脸识别办照',
+      },
+      {
+        iconName: AllIconName.complainticon,
+        title: '举报投诉',
+        des: '快速反馈信息',
+
+      },
       {
         iconName: AllIconName.faceicon,
         title: '我要办照',
         des: '人脸识别办照',
-        iconName1: AllIconName.complainticon,
-        title1: '举报投诉',
-        des1: '快速反馈信息',
+
       },
+      {
+        iconName: AllIconName.complainticon,
+        title: '举报投诉',
+        des: '快速反馈信息',
+
+      },
+      {
+        iconName: AllIconName.complainticon,
+        title: '举报投诉',
+        des: '快速反馈信息',
+
+      }
     ]
   },
-  onLoad() {
-    console.log(AllIconName)
+  methods: {
+    onLoad() {
+      let a = this.data.containerList;
+      if (a.length !== 0) {
+        a.forEach((val, index) => {
+          if (index % 2 === 0) {
+            val.cardinalNumber = true
+          } else {
+            val.cardinalNumber = false
+          }
+        })
+      }
+      this.setData({
+        containerList: a
+      })
+    }
   }
 })

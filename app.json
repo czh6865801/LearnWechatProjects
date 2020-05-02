@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/myself/index",
     "pages/common/navbarczh/index"
   ],
   "window": {
@@ -9,4 +10,3 @@
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
-    

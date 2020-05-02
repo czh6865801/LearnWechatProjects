@@ -25,46 +25,76 @@
 
 .display-container {
   display: flex;
-  border-bottom: 1px solid #f3f3f3;
-}
-
-.display-container:nth-last-child(1) {
-  border-bottom: 0px solid #f3f3f3;
+  flex-wrap: wrap;
 }
 
 .box-shawss {
   box-shadow: -2px -1px 12px 1px rgb(246, 246, 246), 2px 1px 12px 1px rgb(246, 246, 246);
 }
+
 /* 表格内容 */
+
+.wx-grid-item {
+  flex-basis: 50%;
+  position: relative;
+  box-sizing: border-box;
+}
+
 .table-left {
-  flex: 1;
   padding: 20px 15px;
   height: 100rpx;
   display: flex;
   align-items: center;
-  border-right: 1px solid #f3f3f3;
 }
-.table-right {
-  flex: 1;
-  padding: 20px 15px;
-  display: flex;
-  align-items: center;
+
+.wx-grid-hairline {
+  position: relative;
 }
+
+[class*='wx-grid-hairline']::after {
+  position: absolute;
+  box-sizing: border-box;
+  content: ' ';
+  pointer-events: none;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  border-right: 1px solid #ebedf0;
+  border-bottom: 1px solid #ebedf0;
+  transform: scale(0.5);
+}
+
+[class*='wx-grid-even']::after {
+  position: absolute;
+  box-sizing: border-box;
+  content: ' ';
+  pointer-events: none;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  border-bottom: 1px solid #ebedf0;
+  transform: scale(0.5);
+}
+
 .flex-value-one {
   flex: 1;
 }
+
 .container-text-bold {
   font-weight: bold;
   display: block;
 }
+
 .container-text-tint {
   color: rgb(189, 189, 189);
   font-size: 20rpx;
   display: block;
-
 }
 
 /* 图标 */
+
 .icon-face {
   width: 50rpx;
   height: 50rpx;
@@ -72,3 +102,12 @@
   background-repeat: no-repeat;
   background-size: 50rpx 50rpx;
 }
+
+.tabbar-index {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
