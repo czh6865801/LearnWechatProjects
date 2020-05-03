@@ -1,6 +1,6 @@
 Component({ 
   data: {
-    current: 0,
+    selected: 0,
     color: "#7A7E83",
     borderStyle: "white",
     selectedColor: "#ff5722d1",
@@ -9,7 +9,6 @@ Component({
         "text": "首页",
         "iconPath": "/pages/image/png/PageIndex.png",
         "selectedIconPath": "/pages/image/png/PageIndexSelect.png",
-        dot: true
       },
       {
         "pagePath": "/pages/myself/index",
@@ -23,13 +22,14 @@ Component({
   attached() {},
   methods: {
     switchTab(e) {
-      console.log(this,e)
-      const index = e.currentTarget.dataset.index
+      console.log(e)
+      const data = e.currentTarget.dataset
+      const url = data.path
       wx.switchTab({
-        url: this.data.list[index].pagePath
+        url
       })
       this.setData({
-        current: index
+        selected: data.index
       })
     }
   }

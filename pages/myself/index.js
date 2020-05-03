@@ -6,7 +6,7 @@ Component({
       if (typeof this.getTabBar === 'function' &&
         this.getTabBar()) {
         this.getTabBar().setData({
-          current: 1
+          selected: 1
         })
       }
     }
