@@ -4,6 +4,27 @@
     "pages/myself/index",
     "pages/common/navbarczh/index"
   ],
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "borderStyle": "white",
+    "selectedColor": "#ff5722d1",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/pages/image/png/PageIndex.png",
+        "selectedIconPath": "/pages/image/png/PageIndexSelect.png"
+      },
+      {
+        "pagePath": "pages/myself/index",
+        "text": "我的",
+        "iconPath": "/pages/image/png/MyIcon.png",
+        "selectedIconPath": "/pages/image/png/MyIconSelect.png"
+      }
+    ]
+  },
   "window": {
     "navigationStyle": "custom"
   },
